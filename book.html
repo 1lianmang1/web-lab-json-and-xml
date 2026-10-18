@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>bookXML showing</title>
+    <style>
+        .book-item{ border:1px solid #ccc; padding:10px; margin:8px 0; }
+    </style>
+</head>
+<body>
+    <h1>图书目录</h1>
+    <div id="bookContainer"></div>
+
+    <script>
+
+        const container = document.getElementById("bookContainer");
+
+
+        fetch('book.xml')
+        .then(response=>{
+            if(!response.ok){
+                throw new Error("获取xml失败 "+response.status);
+            }
+
+            return response.text();
+        })
+        .then(xmlText=>{
+
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText,'text/xml');
+
+
+            const bookList = xmlDoc.getElementsByTagName("book");
+
+
+            for(let i=0; i<bookList.length; i++){
+                const oneBook = bookList[i];
+
+                const bookId = oneBook.getAttribute("id");
+
+                const title = oneBook.querySelector("title").textContent;
+                const author = oneBook.querySelector("author").textContent;
+                const price = oneBook.querySelector("price").textContent;
+
+
+                const htmlStr = `
+                    <div class="book-item">
+                        <p>图书ID：${bookId}</p>
+                        <p>书名：${title}</p>
+                        <p>作者：${author}</p>
+                        <p>价格：${price}元</p>
+                    </div>
+                `;
+
+                container.innerHTML += htmlStr;
+            }
+        })
+        .catch(err=>{
+
+            console.error(err);
+            container.innerText = "加载出错："+err.message;
+        })
+    </script>
+</body>
+</html>

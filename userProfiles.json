@@ -1,0 +1,56 @@
+[
+    {
+        "firstName": "小明",
+        "lastName": "张",
+        "email": "zhang@example.com",
+        "dateOfBirth": "1995‑05‑12",
+        "address": {
+            "street": "阳光大街12号",
+            "city": "广州",
+            "state": "广东",
+            "zipCode": "510000"
+        },
+        "preferences": {
+            "theme": "dark",
+            "language": "zh‑CN",
+            "notifications": true,
+            "subscription": true
+        }
+    },
+    {
+        "firstName": "小红",
+        "lastName": "李",
+        "email": "li@example.com",
+        "dateOfBirth": "1998‑08‑20",
+        "address": {
+            "street": "科技路45号",
+            "city": "深圳",
+            "state": "广东",
+            "zipCode": "518000"
+        },
+        "preferences": {
+            "theme": "light",
+            "language": "zh‑CN",
+            "notifications": false,
+            "subscription": false
+        }
+    },
+    {
+        "firstName": "Tom",
+        "lastName": "Wang",
+        "email": "wang@example.com",
+        "dateOfBirth": "2000‑02‑01",
+        "address": {
+            "street": "和平路78号",
+            "city": "杭州",
+            "state": "浙江",
+            "zipCode": "310000"
+        },
+        "preferences": {
+            "theme": "dark",
+            "language": "en",
+            "notifications": true,
+            "subscription": true
+        }
+    }
+]
