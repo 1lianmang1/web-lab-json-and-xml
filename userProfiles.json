@@ -1,36 +1,36 @@
 [
     {
-        "firstName": "小明",
-        "lastName": "张",
+        "firstName": "Ming",
+        "lastName": "Zhang",
         "email": "zhang@example.com",
         "dateOfBirth": "1995‑05‑12",
         "address": {
-            "street": "阳光大街12号",
-            "city": "广州",
-            "state": "广东",
+            "street": "12 Sunshine Street",
+            "city": "Guangzhou",
+            "state": "Guangdong",
             "zipCode": "510000"
         },
         "preferences": {
             "theme": "dark",
-            "language": "zh‑CN",
+            "language": "en‑US",
             "notifications": true,
             "subscription": true
         }
     },
     {
-        "firstName": "小红",
-        "lastName": "李",
+        "firstName": "Hong",
+        "lastName": "Li",
         "email": "li@example.com",
         "dateOfBirth": "1998‑08‑20",
         "address": {
-            "street": "科技路45号",
-            "city": "深圳",
-            "state": "广东",
+            "street": "45 Tech Road",
+            "city": "Shenzhen",
+            "state": "Guangdong",
             "zipCode": "518000"
         },
         "preferences": {
             "theme": "light",
-            "language": "zh‑CN",
+            "language": "en‑US",
             "notifications": false,
             "subscription": false
         }
@@ -41,9 +41,9 @@
         "email": "wang@example.com",
         "dateOfBirth": "2000‑02‑01",
         "address": {
-            "street": "和平路78号",
-            "city": "杭州",
-            "state": "浙江",
+            "street": "78 Peace Road",
+            "city": "Hangzhou",
+            "state": "Zhejiang",
             "zipCode": "310000"
         },
         "preferences": {
